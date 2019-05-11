@@ -1,8 +1,8 @@
 <?php
 
 
+use PHPUnit\Framework\TestCase;
 use PingCheng\ApiResponse\ResponseType\JsonResponse;
-use Tests\TestCase;
 
 class TestJsonResponse extends TestCase
 {
