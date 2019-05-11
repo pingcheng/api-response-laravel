@@ -1,0 +1,23 @@
+{
+    "name": "pingcheng/api-response-laravel",
+    "type": "library",
+    "description": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ping Cheng",
+            "email": "ping.che@hotmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "PingCheng\\ApiResponse\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PingCheng\\ApiResponse\\Tests\\": "tests/"
+        }
+    }
+}
