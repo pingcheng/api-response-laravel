@@ -57,13 +57,16 @@ abstract class ResponseBase
     }
 
     /**
-     * @param array $headers
+     * set up a header
+     *
+     * @param $key
+     * @param $value
      *
      * @return ResponseBase
      */
-    public function setHeaders(array $headers): self
+    public function setHeader($key, $value): self
     {
-        $this->headers = $headers;
+        $this->headers[$key] = $value;
         return $this;
     }
 
