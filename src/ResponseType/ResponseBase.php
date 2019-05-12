@@ -70,7 +70,7 @@ abstract class ResponseBase
         return $this;
     }
 
-    public function setHeaders($headers): self
+    public function setHeaders(array $headers): self
     {
         $this->headers = array_merge($this->headers, $headers);
         return $this;
