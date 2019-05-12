@@ -21,3 +21,6 @@ before_script:
 
 script:
   - vendor/bin/phpunit
+
+after_success:
+  - vendor/bin/php-coveralls -v
