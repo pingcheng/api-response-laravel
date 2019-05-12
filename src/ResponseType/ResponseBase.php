@@ -51,7 +51,7 @@ abstract class ResponseBase
         return $this;
     }
 
-    public function getDefaultHeaders(): array
+    public function getHeaders(): array
     {
         return $this->headers;
     }
@@ -67,6 +67,12 @@ abstract class ResponseBase
     public function setHeader($key, $value): self
     {
         $this->headers[$key] = $value;
+        return $this;
+    }
+
+    public function setHeaders($headers): self
+    {
+        $this->headers = array_merge($this->headers, $headers);
         return $this;
     }
 

@@ -41,7 +41,7 @@ class ApiResponse
         /** @var ResponseBase $response */
         $response = new $response_class;
 
-        $response_headers = $response->getDefaultHeaders();
+        $response_headers = $response->getHeaders();
         $response_headers = array_merge($headers, $response_headers);
 
         $response->setCode($status_code)->setData($data)->setHeaders($response_headers);
